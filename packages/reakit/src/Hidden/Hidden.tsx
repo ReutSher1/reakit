@@ -12,7 +12,6 @@ import {
 import hoist from "../_utils/hoist";
 import callAll from "../_utils/callAll";
 import styled, { css } from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 import { HiddenContainerActions } from "./HiddenContainer";
 
@@ -205,4 +204,4 @@ Hidden.defaultProps = {
   timing: "ease-in-out"
 };
 
-export default use(Hidden, "div");
+export default Hidden;

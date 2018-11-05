@@ -3,7 +3,6 @@ import * as PropTypes from "prop-types";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Hidden, { HiddenProps } from "../Hidden";
 import { StepContainerSelectors } from "../Step";
 
@@ -40,4 +39,4 @@ TabsPanel.defaultProps = {
   role: "tabpanel"
 };
 
-export default use(TabsPanel, "div");
+export default TabsPanel;

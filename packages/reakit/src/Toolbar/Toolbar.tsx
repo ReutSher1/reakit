@@ -4,7 +4,6 @@ import { theme, withProp } from "styled-tools";
 import numberToPx from "../_utils/numberToPx";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface ToolbarProps extends BoxProps {
@@ -53,4 +52,4 @@ Toolbar.defaultProps = {
   gutter: 8
 };
 
-export default use(Toolbar, "div");
+export default Toolbar;

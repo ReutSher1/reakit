@@ -3,7 +3,6 @@ import * as PropTypes from "prop-types";
 import { theme, ifProp } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Overlay, { OverlayProps } from "../Overlay";
 
 export interface SidebarProps extends OverlayProps {
@@ -38,4 +37,4 @@ Sidebar.defaultProps = {
   translateY: 0
 };
 
-export default use(Sidebar, "div");
+export default Sidebar;

@@ -45,7 +45,7 @@ interface Props {
           >
             Tab 1
           </Tabs.Tab>
-          <Tabs.Tab tab="tab2" {...tabs}>
+          <Tabs.Tab tab="tab1" {...tabs}>
             Tab 2
           </Tabs.Tab>
         </Tabs>
@@ -62,9 +62,11 @@ interface Props {
   <Popover.Container>
     {popover => (
       <div>
+        <Code codeClassName="" />
         <Popover.Toggle use={Code} codeClassName="" {...popover}>
           Toggle
         </Popover.Toggle>
+        <Popover.Toggle {...popover}>Toggle</Popover.Toggle>
         <Popover {...popover}>Popover</Popover>
       </div>
     )}

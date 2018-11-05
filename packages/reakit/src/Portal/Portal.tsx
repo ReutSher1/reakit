@@ -3,7 +3,6 @@ import * as ReactDOM from "react-dom";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface PortalProps extends BoxProps {}
@@ -41,4 +40,4 @@ const Portal = styled(hoist(PortalComponent, Box))`
   ${theme("Portal")};
 `;
 
-export default use(Portal, "div");
+export default Portal;

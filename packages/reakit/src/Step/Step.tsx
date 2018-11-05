@@ -3,7 +3,6 @@ import * as PropTypes from "prop-types";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Hidden, { HiddenProps } from "../Hidden";
 import { StepContainerSelectors, StepContainerActions } from "./StepContainer";
 
@@ -55,4 +54,4 @@ Step.propTypes = {
   order: PropTypes.number
 };
 
-export default use(Step, "div");
+export default Step;

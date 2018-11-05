@@ -6,7 +6,6 @@ import callAll from "../_utils/callAll";
 import { Omit } from "../_utils/types";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Step, {
   StepContainerActions,
   StepContainerSelectors,
@@ -127,6 +126,7 @@ TabsTab.propTypes = {
 const noop = () => {};
 
 TabsTab.defaultProps = {
+  use: "li",
   role: "tab",
   register: noop,
   update: noop,
@@ -137,4 +137,4 @@ TabsTab.defaultProps = {
   previous: noop
 };
 
-export default use(TabsTab, "li");
+export default TabsTab;

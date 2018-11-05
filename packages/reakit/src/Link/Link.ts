@@ -1,6 +1,5 @@
 import { theme } from "styled-tools";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface LinkProps extends BoxProps {}
@@ -10,7 +9,8 @@ const Link = styled(Box)<LinkProps>`
 `;
 
 Link.defaultProps = {
+  use: "a",
   palette: "primary"
 };
 
-export default use(Link, "a");
+export default Link;

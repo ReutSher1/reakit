@@ -4,7 +4,6 @@ import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import callAll from "../_utils/callAll";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 import { HiddenContainerActions } from "./HiddenContainer";
 
@@ -27,4 +26,8 @@ HiddenHide.propTypes = {
   onClick: PropTypes.func
 };
 
-export default use(HiddenHide, "button");
+HiddenHide.defaultProps = {
+  use: "button"
+};
+
+export default HiddenHide;

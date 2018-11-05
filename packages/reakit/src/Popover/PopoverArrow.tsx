@@ -4,7 +4,6 @@ import { prop, theme } from "styled-tools";
 import { bgColorWithProps } from "../_utils/styledProps";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface PopoverArrowProps extends BoxProps {
@@ -79,4 +78,4 @@ PopoverArrow.defaultProps = {
   palette: "white"
 };
 
-export default use(PopoverArrow, "div");
+export default PopoverArrow;

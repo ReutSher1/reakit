@@ -4,7 +4,6 @@ import { findDOMNode } from "react-dom";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Popover, { PopoverProps } from "../Popover";
 
 export interface TooltipProps extends PopoverProps {}
@@ -63,4 +62,4 @@ Tooltip.defaultProps = {
   palette: "grayscale"
 };
 
-export default use(Tooltip, "div");
+export default Tooltip;

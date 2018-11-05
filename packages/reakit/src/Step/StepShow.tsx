@@ -4,7 +4,6 @@ import { theme } from "styled-tools";
 import { Omit } from "../_utils/types";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import HiddenShow, { HiddenShowProps } from "../Hidden/HiddenShow";
 import { StepContainerActions } from "./StepContainer";
 
@@ -30,4 +29,4 @@ StepShow.propTypes = {
   step: PropTypes.string.isRequired
 };
 
-export default use(StepShow, "button");
+export default StepShow;

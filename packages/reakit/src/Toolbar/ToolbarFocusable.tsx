@@ -6,7 +6,6 @@ import s from "styled-selector";
 import callAll from "../_utils/callAll";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 import Toolbar from "./Toolbar";
 
@@ -180,4 +179,4 @@ ToolbarFocusable.propTypes = {
   disabled: PropTypes.bool
 };
 
-export default use(ToolbarFocusable, "div");
+export default ToolbarFocusable;

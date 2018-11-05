@@ -1,7 +1,6 @@
 import * as PropTypes from "prop-types";
 import { ifProp, theme } from "styled-tools";
 import styled, { css } from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface DividerProps extends BoxProps {
@@ -36,4 +35,8 @@ Divider.propTypes = {
   vertical: PropTypes.bool
 };
 
-export default use(Divider, "hr");
+Divider.defaultProps = {
+  use: "hr"
+};
+
+export default Divider;

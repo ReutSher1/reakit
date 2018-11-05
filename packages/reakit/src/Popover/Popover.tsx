@@ -6,7 +6,6 @@ import s from "styled-selector";
 import Popper from "popper.js";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import Hidden, { Position, HiddenProps } from "../Hidden";
 import PopoverArrow from "./PopoverArrow";
 
@@ -201,4 +200,4 @@ Popover.defaultProps = {
   palette: "white"
 };
 
-export default use(Popover, "div");
+export default Popover;

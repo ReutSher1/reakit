@@ -3,7 +3,6 @@ import * as PropTypes from "prop-types";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import HiddenToggle, { HiddenToggleProps } from "../Hidden/HiddenToggle";
 
 export interface PopoverToggleProps extends HiddenToggleProps {
@@ -30,4 +29,4 @@ PopoverToggle.propTypes = {
   visible: PropTypes.bool
 };
 
-export default use(PopoverToggle, "button");
+export default PopoverToggle;

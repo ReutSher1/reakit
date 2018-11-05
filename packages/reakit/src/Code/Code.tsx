@@ -2,7 +2,6 @@ import * as React from "react";
 import * as PropTypes from "prop-types";
 import { theme } from "styled-tools";
 import styled from "../styled";
-import use from "../use";
 import Box, { BoxProps } from "../Box";
 
 export interface CodeProps extends BoxProps {
@@ -41,4 +40,4 @@ Code.defaultProps = {
   tone: -2
 };
 
-export default use(Code);
+export default Code;

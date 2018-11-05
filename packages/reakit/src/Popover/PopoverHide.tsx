@@ -3,7 +3,6 @@ import * as PropTypes from "prop-types";
 import { theme } from "styled-tools";
 import hoist from "../_utils/hoist";
 import styled from "../styled";
-import use from "../use";
 import HiddenHide, { HiddenHideProps } from "../Hidden/HiddenHide";
 
 export interface PopoverHideProps extends HiddenHideProps {
@@ -30,4 +29,4 @@ PopoverHide.propTypes = {
   visible: PropTypes.bool
 };
 
-export default use(PopoverHide, "button");
+export default PopoverHide;
